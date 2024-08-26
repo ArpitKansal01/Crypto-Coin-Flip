@@ -192,5 +192,5 @@ disconnectButton.addEventListener('click', () => {
     localStorage.removeItem('walletAddress');
     localStorage.removeItem('walletBalance');
     alert('Wallet disconnected successfully!');
-    window.location.href = 'welcome.html';
+    window.location.href = 'index.html';
 });
