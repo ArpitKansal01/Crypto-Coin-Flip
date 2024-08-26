@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip</title>
+    <link rel="stylesheet" href="style.css">
+    <style src="style.css">    </style>
+</head>
+<body>
+   <!-- <input type="number" id="myInput" required min=0 oninput="this.value = this.value < 0 ? '' : this.value;">-->
+    <div class="input-group">
+        <input required="" id="myInput" type="number" name="number" autocomplete="off" class="input" min=0 oninput="this.value = this.value < 0 ? '' : this.value;">
+        <label class="user-label">Enter Amount</label>
+    </div>
+    <div class="input input_select" >
+    <select id="mySelect" required class="select">
+        <option disabled selected value> -- select an option -- </option>
+        <option>Heads</option>
+        <option>Tails</option>
+    </select>
+    </div>
+    <div class="container">
+        <div id="coin">
+            <div id="heads" class="heads"></div>
+            <div id="tails" class="tails"></div>
+        </div>
+        <button id="flip">Flip the Coin</button>
+        <p><span id="status"></span></p>
+    </div>
+
+    <!-- Wallet Info Section -->
+    <div class="wallet-info">
+        <p id="walletAddress"></p>
+        <p id="walletBalance"></p>
+        <img id="toggleBalance" class="eye-icon" src="https://www.kindpng.com/picc/m/377-3772548_hide-eye-on-off-icon-hd-png-download.png" alt="Toggle Balance">
+        <button id="disconnectButton">Disconnect Wallet</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage" class="big-message"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js">    </script>
+</body>
+</html>
